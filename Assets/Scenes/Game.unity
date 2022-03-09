@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1001 &200151337
@@ -335,6 +339,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1 &205574764 stripped
@@ -581,6 +589,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1001 &668991877
@@ -678,6 +690,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1 &696989220 stripped
@@ -1126,6 +1142,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1001 &1063638085
@@ -1223,6 +1243,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1 &1358607736
@@ -1516,6 +1540,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1001 &1813438897
@@ -1613,6 +1641,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
 --- !u!1 &1900032826 stripped
@@ -1815,8 +1847,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7852645065808774916, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}
-      propertyPath: filled
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 429779943}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169cf99c2284b4a4e88ed816211f717f, type: 3}

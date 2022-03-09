@@ -30,11 +30,13 @@ public class ButtonBehaviour : MonoBehaviour
         if (gameManager.turn == GameManager.Turn.Player)
         {
             tmp.text = "X";
+            gameManager.turn = GameManager.Turn.AI;
         }
 
         if (gameManager.turn == GameManager.Turn.AI)
         {
             tmp.text = "O";
+            gameManager.turn = GameManager.Turn.Player;
         }
 
     }
