@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     //things that need to be managed by the game
@@ -11,9 +12,10 @@ public class GameManager : MonoBehaviour
     //restarting the game
 
 
-    public enum Turn {Player, AI};
+    public enum Turn {Player, AI, None};
 
-    public Turn turn;
+    [SerializeField]
+    public static Turn turn;
 
     // Start is called before the first frame update
     void Start()
