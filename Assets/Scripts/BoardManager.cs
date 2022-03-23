@@ -9,7 +9,9 @@ public class BoardManager : MonoBehaviour
     [SerializeField]
     public List<ButtonBehaviour> buttons;
 
+    public enum WinCondition {playerWin, draw, AIWin};
 
+    public WinCondition winCondition;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +21,9 @@ public class BoardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
-    public void CheckSolved()
+    public bool CheckSolved()
     {
         ButtonBehaviour.State played;
 
@@ -33,6 +34,16 @@ public class BoardManager : MonoBehaviour
         else
         {
             played = ButtonBehaviour.State.O;
+        }
+
+        bool filled = true;
+
+        foreach (ButtonBehaviour button in buttons)
+        {
+            if(button.state == ButtonBehaviour.State.Empty)
+            {
+                filled = false;
+            }
         }
 
 
@@ -51,12 +62,11 @@ public class BoardManager : MonoBehaviour
                 GameManager.turn = GameManager.Turn.None;
             }
 
-            Debug.Log("Player wins");
+           return true;
         }
         else
         {
-            Debug.Log("nobody wins");
-            //return false;
+            return filled;
         }
 
     }

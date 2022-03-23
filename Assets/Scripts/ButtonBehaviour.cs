@@ -15,6 +15,9 @@ public class ButtonBehaviour : MonoBehaviour
 
     [SerializeField]
     private PlayerBehaviour player;
+
+    [SerializeField]
+    private BoardManager boardManager;
     
     [SerializeField]
     private AIBehaviour AI;
@@ -25,7 +28,7 @@ public class ButtonBehaviour : MonoBehaviour
 
     private Button button;
 
-    void Start()
+    void Awake()
     {
         tmp = GetComponentInChildren<TextMeshProUGUI>();
         button = GetComponent<Button>();
@@ -48,7 +51,12 @@ public class ButtonBehaviour : MonoBehaviour
 
             GameManager.turn = GameManager.Turn.AI;
 
-            AI.AIMove();
+
+            if(!boardManager.CheckSolved())
+            {
+                AI.AIMove();
+                boardManager.CheckSolved();
+            }
 
         }
 

@@ -17,7 +17,7 @@ public class AIBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        AIMove();
     }
 
     // Update is called once per frame
@@ -54,8 +54,7 @@ public class AIBehaviour : MonoBehaviour
             else
             {
                 Debug.Log("false");
-                returnEmpty();
-                return 0;
+                return returnEmpty();
             }
     }
 }
