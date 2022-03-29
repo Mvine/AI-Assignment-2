@@ -37,6 +37,7 @@ public class ButtonBehaviour : MonoBehaviour
 
     public void SetText()
     {
+        //when the player clicks a button set the button with the players symbol
         if (GameManager.turn == GameManager.Turn.Player)
         {
             tmp.text = PlayerBehaviour.playerSymbol;
@@ -51,7 +52,6 @@ public class ButtonBehaviour : MonoBehaviour
 
             GameManager.turn = GameManager.Turn.AI;
 
-
             if(!boardManager.CheckSolved())
             {
                 AI.AIMove();
@@ -59,20 +59,6 @@ public class ButtonBehaviour : MonoBehaviour
             }
 
         }
-
-         else if (GameManager.turn == GameManager.Turn.AI)
-         {
-             tmp.text = AIBehaviour.AISymbol;
-             GameManager.turn = GameManager.Turn.Player;
-             if(AIBehaviour.AISymbol ==  "X")
-             {
-                 state = ButtonBehaviour.State.X;
-             }
-              if(AIBehaviour.AISymbol ==  "O")
-             {
-                 state = ButtonBehaviour.State.O;
-             }
-         }
 
         button.enabled= false;
 
